@@ -44,5 +44,39 @@ public class Operator {
         System.out.println(x++ - 5); // 증가되기 전에 -가 선언되어 1이 출력. 하지만 출력 후 ++가 되기 때문에 x의 값은 7이 됨
         System.out.println(x); // 1
 
+        // 논리연산자
+        boolean b1 = true;
+        boolean b2 = false;
+        boolean b3 = true;
+
+        System.out.println(b1 && b2); // false
+        System.out.println(b1 && b3); // true
+        System.out.println((b1 || b2)); // true
+        System.out.println((b1 || b3)); // true
+        System.out.println(b2 || b2); // false
+
+        int score = 88;
+        if (score <= 100 && score >= 70) {
+            System.out.println("성공");
+        } else {
+            System.out.println("실패");
+        }
+
+        System.out.println(b1 ^ b3); // false
+        System.out.println(b1 ^ b2); // true
+        System.out.println(!b1); // false
+        System.out.println(!b2); // true
+
+        // 삼항연산자
+        int c1 = (5 > 4) ? 50: 40; // 5가 4보다 크다면 c1에 50을, 아니면 40을 넣는 것
+        System.out.println(c1); // 50
+
+        int c2 = 0;
+        if (5 < 4) {
+            c2 = 50;
+        } else {
+            c2 = 40;
+        }
+        System.out.println(c2); // 40
     }
 }
